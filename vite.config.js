@@ -6,5 +6,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // Expose to external network (Render)
     port: process.env.PORT || 5173, // Use Render-assigned port if available
+    allowedHosts: ['githubclonefrontend.onrender.com'], // Allow Render domain
   },
 })
